@@ -73,8 +73,6 @@ bugbrain/
 └── requirements.txt
 ```
 
-The uploaded project snapshot also contains historical backups, previous workspaces, logs, and a bundled virtual environment. Those are development/runtime artifacts rather than installation requirements.
-
 ## Requirements
 
 ### Operating system
@@ -507,37 +505,6 @@ Program definitions are maintained in:
 ```text
 data/programs.json
 ```
-
-## Recommended clean setup for a Git repository
-
-The uploaded project snapshot contains generated/runtime material that generally should not be committed as part of a clean source release, especially:
-
-```text
-.venv/
-workspaces/
-bugbrain_scan.log
-bugbrain/data/active_verification_audit.jsonl
-bugbrain/data/scopes.json
-bugbrain/data/findings.json
-__pycache__/
-*.pyc
-```
-
-If this repository is going to be published or shared, review generated data first and remove any live targets, private test information, audit history, or other environment-specific artifacts.
-
-A typical `.gitignore` can include:
-
-```gitignore
-.venv/
-__pycache__/
-*.py[cod]
-workspaces/
-bugbrain_scan.log
-bugbrain/data/active_verification_audit.jsonl
-```
-
-Whether `scopes.json`, `findings.json`, and `data/programs.json` are ignored or versioned is a project-management decision; do not commit real target scope merely because the file exists in the repository.
-
 ## Local test application
 
 The repository includes a small controlled test server for local development:
