@@ -1,0 +1,11 @@
+[
+  {
+    "name": "nmap",
+    "command": "nmap",
+    "enabled": true,
+    "capabilities": [
+      "port_scan",
+      "service_detection"
+    ]
+  }
+]

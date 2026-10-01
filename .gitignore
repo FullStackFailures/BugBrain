@@ -1,0 +1,8 @@
+.venv/
+workspaces/
+bugbrain_scan.log
+bugbrain/data/active_verification_audit.jsonl
+bugbrain/data/scopes.json
+bugbrain/data/findings.json
+__pycache__/
+*.pyc

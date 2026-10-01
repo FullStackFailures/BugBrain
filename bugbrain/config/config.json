@@ -1,0 +1,18 @@
+{
+  "settings": {
+    "timeout": 10,
+    "max_redirects": 5,
+    "user_agent": "BugBrain/0.1",
+    "safe_mode": true
+  },
+  "modules": {
+    "http": true,
+    "nmap": true,
+    "headers": true,
+    "exposure": true,
+    "dns": true,
+    "tls": true,
+    "javascript": true,
+    "vulnerability": true
+  }
+}
